@@ -179,7 +179,7 @@ section {
   background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
   position: relative;
   overflow: hidden;
-  padding-top: 80px; /* Untuk navbar fixed */
+  padding-top: 100px; /* Untuk navbar fixed */
 }
 
 .hero::before {
@@ -927,6 +927,20 @@ textarea.form-input {
     border: 1px solid var(--accent-cyan);
     box-shadow: var(--glow-cyan);
     animation: modalSlideIn 0.3s ease;
+}
+
+.cta-section {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.cta-section h2 {
+    margin-bottom: 10px;
+}
+
+.cta-section p {
+    opacity: 0.8;
+    margin-bottom: 25px;
 }
 
 @keyframes modalSlideIn {

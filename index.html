@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Furqon Ramadhani</title>
+    <title>Furqon's portfolio</title>
     <meta name="description" content="Professional Portfolio of Furqon Ramadhani - Web Developer & Designer">
     
     <!-- Google Fonts -->
@@ -51,13 +51,16 @@
                     <h1 class="hero-title animate-fade-up" translate="no">
                         Hi, I'm <span class="text-gradient">Furqon</span>
                     </h1>
-                    <h2 class="hero-subtitle animate-fade-up" translate="no">Informatic Engineer</h2>
+                    <h2 class="hero-subtitle animate-fade-up" translate="no">Web Developer & Designer</h2>
                     <p class="hero-description animate-fade-up">
                         a Web Developer & Designer passionate about creating digital products that are not only visually appealing but also highly functional. I focus on designing visuals that genuinely reflect a brand’s identity while building websites that feel intuitive, seamless, and enjoyable to use.
                     </p>
+                    <p class="hero-description animate-fade-up">
+                    I help small businesses and personal brands build clean, modern websites that convert visitors into customers.
+                    </p>
                     <div class="hero-buttons animate-fade-up">
                         <a href="#projects" class="btn btn-primary">My Work</a>
-                        <a href="#contact" class="btn btn-secondary">interest?</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
                     </div>
                 </div>
                 <div class="hero-image">
@@ -162,8 +165,11 @@
                     <div class="project-content">
                         <h3 class="project-title">Website Warung Makan </h3>
                         <p class="project-description">
-                            A complete website for a local restaurant featuring menu display, online ordering, and customer management system.
+                            A complete website for a local restaurant featuring menu display and ordering system.
                         </p>
+                            <p>
+                                Built as a learning fullstack project using local backend integration while exploring database and server-side concepts.
+                            </p>    
                         <div class="project-tech">
                             <span class="tech-tag">HTML</span>
                             <span class="tech-tag">CSS</span>
@@ -287,6 +293,16 @@
         </div>
     </section>
 
+
+    <section class="cta-section">
+    <div class="container">
+        <h2>Let's work together</h2>
+        <p>
+            Have a project idea or need a clean modern website?
+            I'm open for collaboration and freelance opportunities.
+        </p>
+    </div>
+</section>  
     <!-- Contact Section -->
 
     <section id="contact" class="contact">
@@ -307,14 +323,14 @@
                         </div>
                     </div>
                     <div class="contact-item">
-                        <a href="https://wa.me/6285858533923">
+                        <a href="https://wa.me/6285858533923" target="_blank">
                             <div class="contact-icon">
                                 <i class="fas fa-phone"></i>
                             </div>
                         </a>
                             <div class="contact-details">
                                 <h3>WhatsApp</h3>
-                                <a href="https://wa.me/6285858533923">
+                                <a href="https://wa.me/6285858533923" target="_blank">
                                     <p style="color: rgb(0, 255, 119);">+62 858 585 339 23</p>
                                 </a>
                             </div>
@@ -326,9 +342,8 @@
                         <a href="https://www.fiverr.com/furqonramadhani" class="social-link" target="_blank"><i class="fas fa-star"></i></a>
                     </div>
                 </div>
-                <div class="contact-form animate-slide-right">
-                    
-                </div>
+                <!-- <div class="contact-form animate-slide-right">
+                </div> -->
             </div>
         </div>
     </section>
@@ -337,13 +352,18 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2024 Furqon Ramadhani. All rights reserved.</p>
+                <p>© <span id="year"></span> Furqon Ramadhani</p>
+
             </div>
         </div>
     </footer>
-
+    
     <!-- JavaScript -->
     <script src="animation.js"></script>
     <script src="script.js"></script>
+    <script>
+    document.getElementById("year").textContent =
+    new Date().getFullYear();
+    </script>
 </body>
 </html>
